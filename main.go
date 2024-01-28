@@ -17,8 +17,6 @@ func main() {
 	r.GET("SkinCare/doctors/:id", doctor.GetDoctorByID)
 	r.GET("SkinCare/diag/result/:id", diag.GetResultById)
 	r.GET("SkinCare/diag/result", diag.GetLatestResult)
-	r.POST("/post", diag.CreateAttachmentUpload)
-	r.GET("/photo", diag.GetLatestPhoto)
 	r.POST("SkinCare/diag/postD", diag.CreateData)
 	r.GET("SkinCare/diag/getD", diag.GetLatestData)
 
